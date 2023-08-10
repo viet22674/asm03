@@ -1,8 +1,6 @@
 "use stric";
 // //tao ham hien thi khi nhap mail
 
-
-
 const formContainer = document.getElementById("formContainer");
 const infoContainer = document.getElementById("infoContainer");
 const inputForm = document.getElementById("inputForm");
@@ -41,7 +39,7 @@ function toggleSkillDetails(skillElement) {
   }
 }
 
-// thêm trình xử lý sự kiện nhấp chuột
+// trình xử lý sự kiện nhấp chuột
 function addClickListenersToSkillTitles() {
   const skillTitles = document.querySelectorAll('.section-title h2');
 
@@ -53,6 +51,7 @@ function addClickListenersToSkillTitles() {
   });
 }
 
+// trình xử lý ẩn/hiện văn bản và nút "read more"/"read less" khi di chuột.
 function toggleReadMoreLess(btn) {
   var moreText = btn.nextElementSibling.nextElementSibling;
   var dots = btn.nextElementSibling;
