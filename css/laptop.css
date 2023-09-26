@@ -1,19 +1,22 @@
 * {
   box-sizing: border-box;
-  
 }
-.banner-img{
-  position:relative;
-  }
-.banner-text{
-  position:absolute;
-  text-align: center;
-  color: rgb(226, 210, 210);
+
+.banner-text {
+   color: rgb(226, 210, 210);
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
-top: 10%;
-left:40%;
+ 
 }
+
+.nvv-border-gray {
+  border: 2px solid rgb(223, 215, 217);
+}
+
+.nvv-bg-gray {
+  background-color: rgb(239, 244, 242);
+}
+
 #nav_bar .menu a,
 i {
   text-decoration: none;
@@ -23,16 +26,16 @@ i {
 .button1 {
   border: 2px solid rgb(223, 215, 217);
   vertical-align: text-top;
-  padding-bottom: 30px;
-  padding: 0 50px;
-  padding-top: 30px;
+
+  padding: 30px 50px;
+
   text-transform: none;
   font-size: 15px;
 }
 
 .button2 {
   border-top: 2px solid rgb(223, 215, 217);
-  border-bottom:2px solid rgb(223, 215, 217); ;
+  border-bottom: 2px solid rgb(223, 215, 217);
   vertical-align: text-top;
   padding-bottom: 30px;
   padding-right: 132px;
@@ -44,7 +47,7 @@ i {
 
 .button4 {
   border-top: 2px solid rgb(223, 215, 217);
-  border-bottom:2px solid rgb(223, 215, 217); ;
+  border-bottom: 2px solid rgb(223, 215, 217);
   vertical-align: text-top;
   padding-bottom: 30px;
   padding-right: 32px;
@@ -57,9 +60,9 @@ i {
 .button5 {
   border: 2px solid rgb(223, 215, 217);
   vertical-align: text-top;
-  padding-bottom: 30px;
-  padding: 0 60px;
-  padding-top: 30px;
+
+  padding: 30px 50px;
+
   text-transform: none;
   font-size: 15px;
 }
@@ -79,7 +82,7 @@ i {
   border: 2px solid rgb(223, 215, 217);
   vertical-align: text-top;
   padding-bottom: 20px;
-  padding:0;
+  padding: 0;
   text-transform: none;
   font-size: 25px;
   line-height: 1;
@@ -89,14 +92,13 @@ i {
   display: flex;
   text-align: center;
   justify-content: center;
-  position: relative;
 }
 
 /* thông tin và mục tiêu */
 .title {
   padding-right: 20px;
   font-weight: bold;
-   margin-left: 50px;
+  margin-left: 50px;
 }
 
 #info .title {
@@ -153,33 +155,31 @@ i {
   align-items: center;
   justify-items: end;
   align-content: center;
-  background-color: rgb(239, 244, 242);
 }
 .hide {
   display: none;
 }
 
-
 /* phần mô tả bản thân  */
 
-.container {
+.nvv-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto auto;
   place-content: stretch;
   place-items: stretch;
   gap: 20px 10px;
-  padding: 20px 250px;
+  padding: 20px 0;
 }
 
-.section {
+.nvv-section {
   border: 2px solid rgb(202, 184, 184);
   padding-left: 20px;
   padding-right: 20px;
 }
 
 /* phần kinh nghiệm */
-span{
+span {
   background-color: aqua;
   border-radius: 10px 10px;
   padding-left: 10px;
@@ -187,13 +187,13 @@ span{
   color: aliceblue;
 }
 
-.section #exper {
+.nvv-section #exper {
   display: flex;
   flex-direction: column;
   justify-content: stretch;
   padding-left: 0px;
-  border: 1px solid rgb(190, 183, 183)
-  /* background-color: aqua;  */
+  border: 1px solid rgb(190, 183, 183);
+ 
 }
 
 .section-title {
@@ -224,12 +224,14 @@ ul li::marker {
 
 /* phần học vấn*/
 
-.section #edu {
+.nvv-section #edu {
   padding-bottom: 250px;
 }
 
 /* phần hoạt động */
-#exper .content, #edu .content, #activ .content {
+#exper .content,
+#edu .content,
+#activ .content {
   padding-left: 5px;
   line-height: 1.5;
 }
@@ -243,11 +245,11 @@ ul li::marker {
   place-items: center;
   gap: 0px 15px;
 }
-.h-content i{
+.h-content i {
   width: 50px;
-  height:50px;
+  height: 50px;
   text-align: center;
-  padding-top:20%;
+  padding-top: 20%;
   border-radius: 50%;
   font-size: 30px;
   border: 2px solid blue;
@@ -257,14 +259,16 @@ ul li::marker {
 }
 
 /* phần ngôn ngữ */
-#lang .content, #skill .content, .h-content{
+#lang .content,
+#skill .content,
+.h-content {
   padding-left: 30px;
-  line-height: 3.0;
+  line-height: 3;
 }
 
 .lever {
   display: flex;
-    gap: 3px;
+  gap: 3px;
 }
 
 .lever-1 .l1 {
@@ -289,7 +293,7 @@ ul li::marker {
   display: flex;
   flex-direction: column;
   border: none;
-  padding: 0px:
+  padding: 0px;
 }
 
 #certi .content {
@@ -320,11 +324,11 @@ ul li::marker {
   border-right: 2px solid rgba(233, 197, 69, 0.867);
 }
 
-.content>div:last-child {
+.content > div:last-child {
   border-bottom: none;
   border-right: none;
 }
-.content>div:nth-child(2){
+.content > div:nth-child(2) {
   border-right: none;
   padding-left: 2 0px;
 }
@@ -343,7 +347,7 @@ ul li::marker {
   padding-left: 250px;
 }
 
-.pro{
+.pro {
   display: grid;
   grid-template-columns: repeat(3, minmax(80px, 1fr));
   grid-template-rows: 1fr;
@@ -388,20 +392,18 @@ ul li::marker {
   gap: 20px;
 }
 
-
 .table {
   display: flex;
   flex-direction: column;
   place-content: stretch;
   place-items: stretch;
+  border: 2px solid black;
+  
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
   place-content: stretch;
   place-items: stretch;
   place-self: stretch;
@@ -418,16 +420,16 @@ ul li::marker {
   width: 70%;
   height: 100%;
 }
-#end  ul {
-  width:100%;
+#end ul {
+  width: 100%;
   height: 100px;
   background-color: rgba(101, 109, 109, 0.67);
-  display:flex;
+  display: flex;
   place-content: center;
   place-items: center;
   place-self: center;
-  gap: 200px
- }
+  gap: 200px;
+}
 
 #end ul li {
   display: flex;
@@ -442,21 +444,20 @@ ul li::marker {
   align-self: center;
   padding-top: 7px;
   padding-left: 11px;
-
 }
-#end ul li:link{
+#end ul li:link {
   color: rgb(34, 51, 82);
 }
 
-#end ul li:visited{
+#end ul li:visited {
   color: rgb(189, 121, 175);
 }
-#end ul li:hover{
+#end ul li:hover {
   font-size: 50px;
   background-color: aqua;
   color: blue;
 }
-#end ul li:active{
+#end ul li:active {
   color: rgb(100, 237, 152);
 }
 .more {
@@ -466,10 +467,10 @@ ul li::marker {
   display: none;
 }
 
-.section:hover .myBtn {
+.nvv-section:hover .myBtn {
   display: block;
 }
 
-.section .more.show {
+.nvv-section .more.show {
   display: block;
 }
